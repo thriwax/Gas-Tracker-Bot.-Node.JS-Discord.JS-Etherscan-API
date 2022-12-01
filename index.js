@@ -70,4 +70,4 @@ Ethereum Gas Tracker:
 
 
 
-client.login('MTA0MDg4ODc0Nzc1Mjk1MTgxOQ.GGNNwt.CikYmTt8HhCAVgilQAIi7SIxnNA84U1bfZ0-Kc')
+client.login('YOUR-TOKEN')
