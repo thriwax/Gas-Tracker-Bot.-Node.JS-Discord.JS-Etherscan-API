@@ -47,8 +47,11 @@ if (command === 'gas') {
 `
 Ethereum Gas Tracker:
 
-⛽ Gas Price Now: ${basefee[3]} GWEI
-🧾 Base Fee: ${basefee[0]} GWEI`)
+⛽ Gas Base Fee:: ${basefee[0]} GWEI
+⛽ Safe Gas Price: ${basefee[1]} GWEI
+⛽ Propose Gas Price: ${basefee[2]} GWEI
+⛽ Fast Gas Price: ${basefee[3]} GWEI
+`)
     }
 })
 
