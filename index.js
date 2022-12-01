@@ -1,5 +1,7 @@
 const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions } = require('discord.js');
 
+client.login('YOUR-TOKEN')
+
 const prefix = '-';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
@@ -54,23 +56,3 @@ Ethereum Gas Tracker:
 `)
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-client.login('YOUR-TOKEN')
