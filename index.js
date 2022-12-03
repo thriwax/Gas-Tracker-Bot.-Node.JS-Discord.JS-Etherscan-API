@@ -1,12 +1,27 @@
 const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions } = require('discord.js');
 
-const { fetchData } = require('./gas-price.js')
-
 const prefix = '-';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
 
-client.login('YOUR_TOKEN')
+client.login('MTA0MDg4ODc0Nzc1Mjk1MTgxOQ.GMIWFG.NGAFJqhQfRpjXXTorv_HlDtO0SSo2lZIUq02Wg')
+
+const link =
+  "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=AJNUI74A3Q7ASVN6J7EKG6NBZSBSCP8X14";
+
+const fetchData = async () => {
+  const result = await fetch(link);
+  const data = await result.json();
+
+  const {
+    result: {suggestBaseFee, SafeGasPrice, ProposeGasPrice, FastGasPrice}
+  } = data
+
+  const total = [suggestBaseFee, SafeGasPrice, ProposeGasPrice, FastGasPrice]
+  return total
+};
+
+fetchData();
 
 client.on('ready', () => {
     console.log('Bot is online!');
@@ -40,7 +55,6 @@ Ethereum Gas Tracker:
 `)
     }
 })
-
 
 
 
