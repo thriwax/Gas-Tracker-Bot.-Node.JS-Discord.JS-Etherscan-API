@@ -6,6 +6,8 @@ const prefix = '-';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
 
+client.login('YOUR_TOKEN')
+
 client.on('ready', () => {
     console.log('Bot is online!');
 
@@ -59,4 +61,3 @@ Ethereum Gas Tracker:
 
 
 
-client.login('MTA0MDg4ODc0Nzc1Mjk1MTgxOQ.G13-i5.pg4mv365Wmzi3qtqA8B7QyhJ_n8KyUyOcejvtg')
