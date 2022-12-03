@@ -4,7 +4,7 @@ const prefix = '-';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
 
-client.login('MTA0MDg4ODc0Nzc1Mjk1MTgxOQ.GMIWFG.NGAFJqhQfRpjXXTorv_HlDtO0SSo2lZIUq02Wg')
+client.login('YOUR-TOKEN')
 
 const link =
   "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=AJNUI74A3Q7ASVN6J7EKG6NBZSBSCP8X14";
