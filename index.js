@@ -7,7 +7,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBit
 client.login('YOUR-TOKEN')
 
 const link =
-  "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=AJNUI74A3Q7ASVN6J7EKG6NBZSBSCP8X14";
+  "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=YOUR-API-KEY";
 
 const fetchData = async () => {
   const result = await fetch(link);
